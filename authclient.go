@@ -11,7 +11,7 @@ type AuthClient struct {
 	sock      *net.TCPConn
 	read      chan *IRCMessage
 	write     chan string
-	client		*IRCClient
+	client    *IRCClient
 }
 
 func AcceptAuthConnection(conn *net.TCPConn) {
